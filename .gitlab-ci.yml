@@ -1,0 +1,15 @@
+stages:
+  - publish
+
+publish:
+  stage: publish
+  image: node:18
+  script:
+    - echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
+    - npm publish --access=public 
+  only:
+    - main
+  environment:
+    name: production
+  variables:
+    NPM_AUTH_TOKEN: "$NPM_AUTH_TOKEN"

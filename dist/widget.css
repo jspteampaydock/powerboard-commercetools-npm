@@ -1,0 +1,322 @@
+#powerboard-pay-card iframe {
+    border: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 242px;
+}
+#powerboard-pay-bank-accounts iframe {
+    border: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 180px;
+}
+
+#powerboard-widget-container-3ds iframe {
+    border: 0;
+    height: 220px
+}
+#powerboard-pay-afterpay_v2 {
+    text-align: center;
+}
+#powerboard-pay-afterpay_v2 button {
+    width: 150px;
+}
+  
+.selected-saved-card .widget-powerboard-checkbox,
+.selected-saved-card iframe {
+    display: none!important;
+}
+
+.selected-saved-bank .widget-powerboard-checkbox {
+    display: none!important;
+}
+  
+.widget-powerboard-checkbox {
+    margin: 10px 0 0 0!important;
+    text-transform: initial!important;
+    cursor: pointer;
+    display: flex!important;
+    align-items: center!important;
+}
+.widget-powerboard-checkbox input {
+    margin: 0!important;
+    height: auto!important;
+    flex: 0 0 13px!important;
+}
+.widget-powerboard-select {
+    margin-top: 20px;
+    font-weight: 600;
+}
+.widget-powerboard-select .select {
+    position: relative;
+    display: inline-block;
+    min-width: 160px;
+    width: 100%;
+    border: none;
+    height: auto;
+    padding: 0;
+    font-weight: 400;
+}
+.widget-powerboard-select .select .value {
+    color: #1c2730;
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid #d9d9d9;
+    padding: 14px 52px 13px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    transition: all .25s ease-in-out;
+    position: relative;
+    z-index: 1;
+    height: 48px;
+}
+.widget-powerboard-select .select .value:hover,
+.widget-powerboard-select .select.-open .value {
+    border-color: #666;
+}
+.widget-powerboard-select .select .value:after {
+    transition: all .25s ease-in-out;
+    position: absolute;
+    content: " ";
+    right: 16px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 5px solid rgba(0,0,0,0);
+    border-right: 5px solid rgba(0,0,0,0);
+    border-top: 5px solid #737373;
+}
+.widget-powerboard-select .select .value:before {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #d9d9d9;
+    position: absolute;
+    right: 42px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.widget-powerboard-select .select .dropdown {
+    display: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+    top: 100%;
+    position: absolute;
+    padding: 10px 0;
+    margin: 5px 0 0;
+}
+.widget-powerboard-select .select.-open .dropdown {
+    display: block;
+}
+.widget-powerboard-select .select ul {
+    padding: 0;
+    margin: 0;
+    max-height: 205px;
+    overflow-y: scroll;
+}
+.widget-powerboard-select .select ul li {
+    padding: 8px 15px;
+}
+.widget-powerboard-select select ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+.widget-powerboard-select .select ul::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+.widget-powerboard-select .select ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(122,153,217)),
+    color-stop(0.72, rgb(73,125,189)),
+    color-stop(0.86, rgb(73,125,189)));
+}
+.widget-powerboard-select .select ul li:hover {
+    background: #f5f5f5;
+}
+.widget-powerboard-select .select ul, .select li {
+    padding: 0;
+    margin: 0;
+}
+.widget-powerboard-select .select ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.widget-powerboard-select .select.-open .value:after {
+    transform: rotate(-180deg) scale(1) skew(0deg) translate(0px);
+    border-top-color: rgba(73, 125, 189, 0.72);
+}
+
+.powerboard-server-error{
+    color: red;
+    padding: 20px 0;
+}
+#powerboard-pay-afterpay_v1 > div,
+#powerboard-pay-zippay > div {
+    cursor: pointer;
+}
+
+#powerboard-pay-google-pay,
+#powerboard-pay-apple-pay,
+#powerboard-pay-afterpay_v1,
+#powerboard-pay-afterpay_v2,
+#powerboard-pay-paypal_smart,
+#powerboard-pay-zippay {
+    min-height: 100px;
+    padding: 30px 15px;
+}
+#powerboard-pay-bank-accounts,
+#powerboard-pay-card {
+    min-height: 240px;
+}
+#powerboard-pay-card.selected-saved-card {
+    min-height: 80px;
+}
+
+.powerboard-widget_payment-method {
+    border-bottom: 1px solid #e7e7e7;
+}
+.powerboard-widget_head {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.powerboard-widget_head img {
+    vertical-align: middle;
+    margin: 0 5px;
+    position: relative;
+    z-index: 1;
+}
+.powerboard-widget_head input[type=radio]  {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 0;
+    z-index: 0;
+}
+.powerboard-widget_head label {
+    margin: 0;
+    padding: 20px 10px 20px 21px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.powerboard-widget_head label i,
+.powerboard-widget_body .method-description {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+.powerboard-widget_head label i {
+    font-weight: 500;
+    position: relative;
+    padding-right: 25px;
+}
+.powerboard-widget_body .method-description {
+    font-weight: 400;
+}
+.powerboard-widget_head:not(.active) label {
+    cursor: pointer;
+}
+.powerboard-widget_body {
+    margin-bottom: 20px;
+}
+.powerboard-widget_head label i:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+#powerboardAPMsAfterpayButton,
+#powerboardAPMsZipButton {
+    width: 150px;
+    height: 55px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+}
+#powerboard-widget-container .hide {
+    display: none;
+}
+.widget-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 5000;
+}
+.widget-overlay .widget-spinner {
+    background: transparent;
+}
+.widget-set-disabled {
+    position: relative;
+    background-color: #fff!important;
+    font-size: 0!important;
+    border: 0!important;
+    pointer-events: none;
+    min-height: 67px;
+}
+.widget-set-disabled *:not(.widget-spinner) {
+    background-color: #fff!important;
+    font-size: 0!important;
+    border: 0!important;
+}
+.widget-set-disabled >*:not(.widget-spinner) {
+    display: none!important;
+}
+.widget-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+    animation: spin 1s linear infinite;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
